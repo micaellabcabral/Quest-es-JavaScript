@@ -1,6 +1,4 @@
 /**** Escreva o código abaixo 👇******/
-const a = 10;
-const b = 5;
 
 /* Questão 1 */
 function somar(a, b) {
@@ -20,7 +18,8 @@ function subtrair(a, b) {
 /* Questão 4 */
 function dividir (a, b) {
   if (b === 0) {
-    return "Erro: divisão por zero";
+    throw new console.error( "Erro: divisão por zero");
+
   }
   return a / b;
 }
@@ -30,11 +29,7 @@ function calcularAreaRetangulo(largura, altura) {
   return multiplicar(largura, altura);
 }
 
-console.log ("Soma:", somar(a, b));
-console.log ("Multiplicação:", multiplicar(a,b))
-console.log ("Subtração:", subtrair (a,b))
-console.log ("Divisão:", dividir (a,b))
-console.log ("Área do retângulo:", calcularAreaRetangulo(10, 5)); 
+
 
 
 /**** Escreva o código acima ☝️******/
@@ -45,10 +40,11 @@ module.exports = {
   multiplicar,
   subtrair,
   dividir,
-  calcularMedia,
-  elevarPotencia,
+  calcularMedia, 
+  elevarPotencia, 
   calcularAreaRetangulo,
-  verificarParOuImpar,
+  verificarParOuImpar, 
   calcularRaizQuadrada,
-  calcularHipotenusa,
+  calcularHipotenusa, 
+
 };
